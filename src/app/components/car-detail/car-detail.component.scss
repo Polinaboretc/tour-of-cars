@@ -1,0 +1,18 @@
+.car-detail-container{
+display: flex;
+flex-direction: column;
+font-size: large;
+border: 2px solid;
+padding: 8px;
+border-radius: 16px;
+margin-bottom: 8px;
+}
+
+.unavailable{
+  background-color: rgba(255, 0, 0, 0.344);
+}
+
+.available{
+  background-color: rgba(0, 255, 72, 0.344);
+}
+

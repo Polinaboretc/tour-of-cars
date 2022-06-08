@@ -1,0 +1,22 @@
+<div *ngIf="car" class="car-detail-container" [class.unavailable]="car.isAvailable === false" [class.available]="car.isAvailable === true">
+  <div>
+    <span>id: {{car.id}}</span>
+  </div>
+  <div>
+    <span>modello: </span>
+    <input [(ngModel)]="car.model" type="text" name="model" id="model">
+  </div>
+  <div>
+    <span>produttore: </span>
+    <input [(ngModel)]="car.producer" type="text" name="producer" id="producer">
+  </div>
+  <div>
+    <span>velocità massima: </span>
+    <input [(ngModel)]="car.maxSpeed" type="number" name="maxSpeed" id="maxSpeed">
+  </div>
+  <div>
+    <span>cilindrata: </span>
+    <input [(ngModel)]="car.displacement" type="number" name="displacement" id="displacement">
+  </div>
+</div>
+
